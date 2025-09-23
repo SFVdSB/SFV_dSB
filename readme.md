@@ -181,5 +181,5 @@ Choose a permissive license unless you have constraints (MIT or BSD-3-Clause are
 
 ## Contact
 
-Questions, suggestions, or reproduction issues: open a GitHub issue or email **[your contact here]**.
+Questions, suggestions, or reproduction issues: open a GitHub issue or email **talkingcommunities@gmail.com**.
 
