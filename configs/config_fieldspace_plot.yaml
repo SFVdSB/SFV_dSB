@@ -1,0 +1,15 @@
+# configs/config_fieldspace_plot.yaml
+grid:
+  Phi_range: [-2.0*vPhi, 2.0*vPhi]
+  phi_range: [-1.5*phi_FV, 1.5*phi_FV]
+  n_Phi: 300
+  n_phi: 300
+normalize_to_false_vacuum: true
+overlay:
+  show_path: true
+  mark_TV_FV: true
+style:
+  contour_levels: 25
+  label_inline: true
+output:
+  png: "fieldspace_contours_path.png"

@@ -1,0 +1,42 @@
+# configs/config_benchmark.yaml
+meta:
+  name: "sfv_dsb_benchmark_negphi"
+  description: "Negative-phi FV branch; g_portal=2.0; target SE~1424"
+  seed: 42
+model:
+  units: "reduced Planck"
+  v: 9.0e-5
+  vPhi: 9.0e-5     # if distinct from v, set accordingly; else keep equal
+  lambda: 1.3e-4
+  lambdaPhi: 1.0e-1
+  g_portal: 2.0
+  # Bias convention: epsilon = -1.01 * DeltaV / vPhi^2 with
+  # DeltaV = (mu2^2/lambda) + mu2 + lambda/4   (dimensionless mapping)
+  bias_rule: "epsilon = -1.01 * DeltaV / vPhi^2"
+  mu2: "derived or explicit value"   # put the numeric if you fix it explicitly
+branch_selection:
+  false_vacuum_branch: "negative_phi"   # {negative_phi, positive_phi}
+  enforce_branch: true                   # code will clip/offset initial path
+solver:
+  engine: "scipy.solve_bvp"
+  tol: 1.0e-5
+  max_nodes: 500000
+  rmax: 100.0            # dimensionless box size
+  analytic_jacobian: true
+  continuation:
+    parameter: "g_portal"
+    schedule: [0.0, 0.2, 0.4, 0.8, 1.2, 1.6, 2.0]
+    step_halving: true
+initial_guess:
+  R0: 11.9
+  w: 3.0
+  profile: "tanh-wall"
+outputs:
+  outdir: "./runs/benchmark_${DATE}/"
+  save_plots: true
+  save_csv: true
+  save_logs: true
+figures:
+  profile_png: "profile_phiPhi.png"
+  action_density_png: "action_density.png"
+  fieldspace_png: "fieldspace_contours_path.png"
