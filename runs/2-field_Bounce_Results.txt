@@ -1,0 +1,64 @@
+Maximum relative residual: 1.00e-05
+Maximum boundary residual: 1.50e-23
+Decoupled solution OK. Starting adaptive continuation...
+
+--- Initial g=0 Analysis ---
+Euclidean Action: S_E=-13376.7830
+[cont] OK   g=0.000  rmax=100.0  R≈76.790  S_E≈-13376.8
+ -> Successfully reached g_portal=0.0400, R≈7.006, S_E=74.3651
+ -> Successfully reached g_portal=0.0800, R≈10.676, S_E=98.2166
+ -> Successfully reached g_portal=0.1200, R≈7.171, S_E=233.9196
+ -> Successfully reached g_portal=0.1600, R≈6.635, S_E=379.4394
+ -> Successfully reached g_portal=0.2000, R≈6.470, S_E=488.9803
+ -> Successfully reached g_portal=0.2400, R≈6.429, S_E=576.0441
+ -> Successfully reached g_portal=0.2800, R≈6.388, S_E=647.8933
+ -> Successfully reached g_portal=0.3200, R≈6.388, S_E=708.8176
+ -> Successfully reached g_portal=0.3600, R≈6.429, S_E=761.5438
+ -> Successfully reached g_portal=0.4000, R≈6.429, S_E=807.9063
+ -> Successfully reached g_portal=0.4400, R≈6.429, S_E=849.1952
+ -> Successfully reached g_portal=0.4800, R≈6.429, S_E=886.3507
+ -> Successfully reached g_portal=0.5200, R≈6.470, S_E=920.0782
+ -> Successfully reached g_portal=0.5600, R≈6.470, S_E=950.9200
+ -> Successfully reached g_portal=0.6000, R≈6.470, S_E=979.3015
+ -> Successfully reached g_portal=0.6400, R≈6.512, S_E=1005.5620
+ -> Successfully reached g_portal=0.6800, R≈6.512, S_E=1029.9770
+ -> Successfully reached g_portal=0.7200, R≈6.512, S_E=1052.7722
+ -> Successfully reached g_portal=0.7600, R≈6.512, S_E=1074.1354
+ -> Successfully reached g_portal=0.8000, R≈6.553, S_E=1094.2241
+ -> Successfully reached g_portal=0.8400, R≈6.553, S_E=1113.1718
+ -> Successfully reached g_portal=0.8800, R≈6.553, S_E=1131.0925
+ -> Successfully reached g_portal=0.9200, R≈6.553, S_E=1148.0843
+ -> Successfully reached g_portal=0.9600, R≈6.594, S_E=1164.2322
+ -> Successfully reached g_portal=1.0000, R≈6.594, S_E=1179.6102
+ -> Successfully reached g_portal=1.0400, R≈6.594, S_E=1194.2834
+ -> Successfully reached g_portal=1.0800, R≈6.594, S_E=1208.3091
+ -> Successfully reached g_portal=1.1200, R≈6.594, S_E=1221.7379
+ -> Successfully reached g_portal=1.1600, R≈6.635, S_E=1234.6150
+ -> Successfully reached g_portal=1.2000, R≈6.635, S_E=1246.9807
+ -> Successfully reached g_portal=1.2400, R≈6.635, S_E=1258.8711
+ -> Successfully reached g_portal=1.2800, R≈6.635, S_E=1270.3189
+ -> Successfully reached g_portal=1.3200, R≈6.635, S_E=1281.3534
+ -> Successfully reached g_portal=1.3600, R≈6.677, S_E=1292.0013
+ -> Successfully reached g_portal=1.4000, R≈6.677, S_E=1302.2867
+ -> Successfully reached g_portal=1.4400, R≈6.677, S_E=1312.2318
+ -> Successfully reached g_portal=1.4800, R≈6.677, S_E=1321.8566
+ -> Successfully reached g_portal=1.5200, R≈6.677, S_E=1331.1796
+ -> Successfully reached g_portal=1.5600, R≈6.677, S_E=1340.2178
+ -> Successfully reached g_portal=1.6000, R≈6.677, S_E=1348.9868
+ -> Successfully reached g_portal=1.6400, R≈6.718, S_E=1357.5009
+ -> Successfully reached g_portal=1.6800, R≈6.718, S_E=1365.7734
+ -> Successfully reached g_portal=1.7200, R≈6.718, S_E=1373.8167
+ -> Successfully reached g_portal=1.7600, R≈6.718, S_E=1381.6421
+ -> Successfully reached g_portal=1.8000, R≈6.718, S_E=1389.2603
+ -> Successfully reached g_portal=1.8400, R≈6.718, S_E=1396.6810
+ -> Successfully reached g_portal=1.8800, R≈6.718, S_E=1403.9136
+ -> Successfully reached g_portal=1.9200, R≈6.718, S_E=1410.9665
+ -> Successfully reached g_portal=1.9600, R≈6.759, S_E=1417.8479
+ -> Successfully reached g_portal=2.0000, R≈6.759, S_E=1424.5651
+
+Max stable g_portal = 2.0000
+Final: R≈6.759, S_E=1424.5651
+Calculation took 84.73s
+
+--- Final g=2.0 Analysis ---
+Euclidean Action: S_E=1424.5651
