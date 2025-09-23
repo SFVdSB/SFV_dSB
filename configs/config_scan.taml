@@ -1,0 +1,20 @@
+# configs/config_scan.yaml
+meta:
+  name: "rho_scan_negphi"
+  description: "Scan in rho = vPhi/v with fixed lambda, lambdaPhi, g"
+model_fixed:
+  v: 9.0e-5
+  lambda: 1.3e-4
+  lambdaPhi: 1.0e-1
+  g_portal: 2.0
+  bias_rule: "epsilon = -1.01 * DeltaV / vPhi^2"
+scan:
+  vary: "rho"                 # {rho, lambda, lambdaPhi, g_portal}
+  grid: {start: 0.4, stop: 2.5, step: 0.05}
+  per_point:
+    solver_tol: 1.0e-5
+    max_time_s: 900          # optional guardrail; if exceeded, mark 'timeout'
+    retries: 2               # mesh refinement or smaller step
+record:
+  write_csv: "./runs/scans/rho_scan_results.csv"
+  fields: ["rho","converged","SE","R0","w","nodes","tol"]
